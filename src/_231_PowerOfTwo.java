@@ -1,4 +1,7 @@
-public class powerOfTwoSolution {
+/*
+ Given an integer, write a function to determine if it is a power of two.
+ */
+public class _231_PowerOfTwo {
     public static boolean isPowerOfTwo(int n) {
     	if(n == 1){
             return true;

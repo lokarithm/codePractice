@@ -1,4 +1,16 @@
-public class BinaryTree {
+/*
+ Given a binary tree, return the preorder traversal of its nodes' values.
+
+ For example:
+ Given binary tree {1,#,2,3},
+    1
+     \
+      2
+     /
+    3
+ return [1,2,3].
+*/
+public class _144_BinaryTree {
 
 	Node root;
 
@@ -164,7 +176,7 @@ public class BinaryTree {
 
 	public static void main(String[] args) {
 
-		BinaryTree theTree = new BinaryTree();
+		_144_BinaryTree theTree = new _144_BinaryTree();
 
 		theTree.addNode(50, "Boss");
 

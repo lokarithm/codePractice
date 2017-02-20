@@ -1,4 +1,8 @@
-public class countPrimesSolution {
+/*
+ Count the number of prime numbers less than a non-negative number, n.
+ */
+
+public class _204_CountPrimes {
     public static int countPrimes(int n) {
         if (n < 3)
             return 0;
@@ -7,13 +11,11 @@ public class countPrimesSolution {
 
         int count = n / 2;
         for (int i = 3; i * i < n; i += 2) {
-        	System.out.println("iii = "+i);
             if (f[i]){
                 continue;
             }
             
             for (int j = i * i; j < n; j += 2 * i) {
-            	System.out.println("j = "+j);
                 if (!f[j]) {
                     --count;
                     f[j] = true;
