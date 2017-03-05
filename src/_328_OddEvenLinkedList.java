@@ -11,7 +11,12 @@
  The relative order inside both the even and odd groups should remain as it was in the input. 
  The first node is considered odd, the second node even and so on ...
 */
+
+import dto.ListNode;
+import static common.StaticMethod.*;
+
 public class _328_OddEvenLinkedList {
+	
     public static ListNode oddEvenList(ListNode head) {
     	if (head != null) {
     	    
@@ -36,29 +41,5 @@ public class _328_OddEvenLinkedList {
     	printNode(oddEvenList(testNode2)); 	
 	}
     
-    public static void printNode(ListNode node){
-    	while(node != null){
-    		System.out.println(node.val);
-    		node = node.next;
-    	}
-    	System.out.println("Done.");
-    }
     
-    private static ListNode createLinklistOfLengthN(int n){
-    	ListNode head = new ListNode(1);
-    	ListNode curr = head;
-    	
-    	for(int i=2;i<=n;i++){
-    		curr.next = new ListNode(i);
-    		curr = curr.next;
-    	}
-    	
-    	return head;
-    }
-}
-
-class ListNode {
-    public int val;
-    public ListNode next;
-    public ListNode(int x) { val = x; }
 }
