@@ -18,9 +18,9 @@ public class _328_OddEvenLinkedList {
             ListNode odd = head, even = head.next, evenHead = even; 
         
             while (even != null && even.next != null) {
-                odd.next = odd.next.next; 
-                even.next = even.next.next; 
-                odd = odd.next;
+                odd.next = even.next;		// set next pointer of the current odd pointer to next odd number node
+                odd = odd.next;				// set the current odd pointer to next odd number node
+                even.next = odd.next; 		// similar steps to the even pointer 
                 even = even.next;
             }
             odd.next = evenHead; 
@@ -29,31 +29,8 @@ public class _328_OddEvenLinkedList {
     }
     
     public static void main(String[] args) {
-    	ListNode testNode1 = new ListNode(1){{
-    		next = new ListNode(2){{
-    			next = new ListNode(3){{
-    				next = new ListNode(4){{
-    					next = new ListNode(5){{
-    						next = new ListNode(6){{
-    							next = new ListNode(7){{
-    								next = new ListNode(8){{
-    									next = null;
-    								}};
-    			    			}};
-    		    			}};
-    	    			}};
-        			}};
-    			}};
-    		}};
-    	}};
-    	
-    	ListNode testNode2 = new ListNode(1){{
-    		next = new ListNode(2){{
-    			next = new ListNode(3){{
-    				next = null;
-    			}};
-    		}};
-    	}};
+    	ListNode testNode1 = createLinklistOfLengthN(8);    	
+    	ListNode testNode2 = createLinklistOfLengthN(3);
     	
     	printNode(oddEvenList(testNode1));
     	printNode(oddEvenList(testNode2)); 	
@@ -63,9 +40,21 @@ public class _328_OddEvenLinkedList {
     	while(node != null){
     		System.out.println(node.val);
     		node = node.next;
-    	}   
+    	}
+    	System.out.println("Done.");
     }
-	
+    
+    private static ListNode createLinklistOfLengthN(int n){
+    	ListNode head = new ListNode(1);
+    	ListNode curr = head;
+    	
+    	for(int i=2;i<=n;i++){
+    		curr.next = new ListNode(i);
+    		curr = curr.next;
+    	}
+    	
+    	return head;
+    }
 }
 
 class ListNode {
