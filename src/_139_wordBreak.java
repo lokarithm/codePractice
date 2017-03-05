@@ -11,7 +11,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class _139_wordBreak {
+public class _139_WordBreak {
 
 	    public static boolean wordBreak(String s, Set<String> wordDict) {
 	    	int nextCuttingPoint = 0;
