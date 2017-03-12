@@ -44,7 +44,7 @@ public class _092_Reverse_Linked_List_II {
         		rHead.next = curr.next;	// points rHead to the next node of the iteration
         		curr.next = pre.next;	// points iterator node to the node right after the pre node
         		pre.next = curr;		// points the pre node to iterator node
-        		curr = rHead.next;		// poinst the iterator node to the next node of the iteration
+        		curr = rHead.next;		// points the iterator node to the next node of the iteration
         	}
         }
         
