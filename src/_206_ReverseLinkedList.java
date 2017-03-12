@@ -8,10 +8,10 @@ import static common.StaticMethod.*;
 public class _206_ReverseLinkedList {
 	public static ListNode reverseList(ListNode head) {
 		if(head == null) return head;
-		ListNode curr = null, temp = null;
+		ListNode curr = null;
 
         while(head.next != null){
-    		temp = head.next;	// preserve current node
+        	ListNode temp = head.next;	// preserve current node
     		head.next = curr;
     		curr = head;
     		head = temp;
