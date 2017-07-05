@@ -1,3 +1,4 @@
+package linkedList;
 /*
  Reverse a singly linked list.
  */
@@ -23,8 +24,8 @@ public class _206_ReverseLinkedList {
     }
 	
 	public static void main(String[] args) {
-		ListNode testNode1 = createLinklistOfLengthN(8);    	
-    	ListNode testNode2 = createLinklistOfLengthN(3);
+		ListNode testNode1 = createLinkedlistOfLengthN(8);    	
+    	ListNode testNode2 = createLinkedlistOfLengthN(3);
     	
     	printNode(reverseList(testNode1));
     	printNode(reverseList(testNode2));

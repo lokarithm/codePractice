@@ -1,3 +1,4 @@
+package linkedList;
 /*
  Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes.
  
@@ -34,12 +35,11 @@ public class _328_OddEvenLinkedList {
     }
     
     public static void main(String[] args) {
-    	ListNode testNode1 = createLinklistOfLengthN(8);    	
-    	ListNode testNode2 = createLinklistOfLengthN(3);
+    	ListNode testNode1 = createLinkedlistOfLengthN(8);    	
+    	ListNode testNode2 = createLinkedlistOfLengthN(3);
     	
     	printNode(oddEvenList(testNode1));
     	printNode(oddEvenList(testNode2)); 	
-	}
-    
+	}   
     
 }

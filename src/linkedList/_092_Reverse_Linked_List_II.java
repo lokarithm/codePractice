@@ -1,3 +1,4 @@
+package linkedList;
 /*
  Reverse a linked list from position m to n. Do it in-place and in one-pass.
  
@@ -52,7 +53,7 @@ public class _092_Reverse_Linked_List_II {
     }
 	
 	public static void main(String[] args) {
-    	ListNode testNode1 = createLinklistOfLengthN(5);
+    	ListNode testNode1 = createLinkedlistOfLengthN(5);
     	
     	printNode(reverseBetween(testNode1, 2, 5));
 	}
