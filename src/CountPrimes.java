@@ -1,8 +1,9 @@
 /*
- Count the number of prime numbers less than a non-negative number, n.
+    #204
+    Count the number of prime numbers less than a non-negative number, n.
  */
 
-public class _204_CountPrimes {
+public class CountPrimes {
     public static int countPrimes(int n) {
         if (n < 3)
             return 0;

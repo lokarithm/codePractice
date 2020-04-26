@@ -1,4 +1,5 @@
 /*
+	//#144
  Given a binary tree, return the preorder traversal of its nodes' values.
 
  For example:
@@ -10,7 +11,7 @@
     3
  return [1,2,3].
 */
-public class _144_BinaryTree {
+public class BinaryTree {
 
 	Node root;
 
@@ -176,7 +177,7 @@ public class _144_BinaryTree {
 
 	public static void main(String[] args) {
 
-		_144_BinaryTree theTree = new _144_BinaryTree();
+		BinaryTree theTree = new BinaryTree();
 
 		theTree.addNode(50, "Boss");
 
